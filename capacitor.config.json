@@ -1,0 +1,15 @@
+{
+  "appId": "com.lifeos.reminder",
+  "appName": "LifeOS Reminder",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 800,
+      "backgroundColor": "#101828",
+      "showSpinner": false
+    }
+  }
+}

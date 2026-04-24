@@ -56,3 +56,44 @@ Future modules should be added under `src/modules` and connected through `main.j
 - Investment, income, subscription, health, notes, and team modules
 - Automation workflow engine
 - Native wrapper through Capacitor or a full React Native migration
+
+## Android APK
+
+This repo includes a Capacitor Android project.
+
+Prerequisites:
+
+- Android Studio
+- Android SDK
+- Java/JDK, usually bundled with Android Studio
+
+Prepare Android assets:
+
+```powershell
+npm run build
+npx cap sync android
+```
+
+Open in Android Studio:
+
+```powershell
+npx cap open android
+```
+
+Build APK from Android Studio:
+
+```text
+Build -> Build Bundle(s) / APK(s) -> Build APK(s)
+```
+
+Or build from terminal after Java and Android SDK are configured:
+
+```powershell
+android\gradlew.bat -p android assembleDebug
+```
+
+Debug APK output:
+
+```text
+android\app\build\outputs\apk\debug\app-debug.apk
+```

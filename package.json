@@ -5,6 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "serve": "node server.mjs"
+    "serve": "node server.mjs",
+    "build": "node scripts/prepare-capacitor-web.mjs",
+    "android:sync": "npm run build && cap sync android",
+    "android:open": "npm run android:sync && cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1"
   }
 }
